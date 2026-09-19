@@ -23,7 +23,7 @@ export default function OperatorReview() {
   };
 
   return (
-    <section className="section-spacing" ref={ref}>
+    <section id="operator-review" className="section-spacing" ref={ref}>
       <div className="section-container max-w-3xl">
         <motion.div
           className="text-center"
@@ -38,9 +38,9 @@ export default function OperatorReview() {
           </h2>
 
           <p className="text-afterlight-text-secondary text-lg mb-12 max-w-lg mx-auto">
-            AFTERLIGHT surfaces potential matches.
+            The algorithm proposes — AFTERLIGHT surfaces potential matches based on capacity, timing, and constraints.
             <br />
-            A human approves, holds, or rejects.
+            A human disposes — every match stops here for an operator to approve, hold, or reject.
           </p>
         </motion.div>
 

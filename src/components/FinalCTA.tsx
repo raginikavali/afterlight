@@ -82,7 +82,7 @@ export default function FinalCTA() {
               START A 30-DAY PILOT <span>→</span>
             </button>
             <button
-              onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => document.getElementById('operator-review')?.scrollIntoView({ behavior: 'smooth' })}
               className="btn-secondary"
             >
               EXPLORE THE MODEL

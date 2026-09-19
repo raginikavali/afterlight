@@ -39,8 +39,8 @@ export default function Navigation() {
         {/* Center — Links (desktop) */}
         <div className="hidden md:flex items-center gap-8">
           {[
-            { label: 'THE IDEA', id: 'insight' },
-            { label: 'THE MODEL', id: 'how-it-works' },
+            { label: 'THE PROBLEM', id: 'problem' },
+            { label: 'OPERATOR REVIEW', id: 'operator-review' },
             { label: 'PILOT', id: 'pilot' },
           ].map(({ label, id }) => (
             <button

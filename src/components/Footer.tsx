@@ -21,8 +21,8 @@ export default function Footer() {
           {/* Links */}
           <div className="flex items-center gap-6">
             {[
-              { label: 'THE IDEA', id: 'insight' },
-              { label: 'THE MODEL', id: 'how-it-works' },
+              { label: 'THE PROBLEM', id: 'problem' },
+              { label: 'OPERATOR REVIEW', id: 'operator-review' },
               { label: 'PILOT', id: 'pilot' },
             ].map(({ label, id }) => (
               <button

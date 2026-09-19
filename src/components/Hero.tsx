@@ -73,15 +73,33 @@ export default function Hero({
               AFTERLIGHT turns the hours buildings sit empty into usable capacity.
             </motion.p>
 
+            {/* Approach strip — salvaged from HowItWorks */}
+            <motion.div
+              className="space-y-3"
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.9 }}
+            >
+              <div className="text-label text-afterlight-amber">THE AFTERLIGHT APPROACH</div>
+              {['OBSERVE', 'MATCH', 'USE'].map((item) => (
+                <div key={item} className="flex items-center gap-4">
+                  <div className="w-8 h-px bg-afterlight-amber/40" />
+                  <span className="text-xl font-light text-afterlight-text-primary tracking-wider">
+                    {item}
+                  </span>
+                </div>
+              ))}
+            </motion.div>
+
             {/* CTA */}
             <motion.div
               className="flex flex-wrap items-center gap-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1 }}
+              transition={{ duration: 0.6, delay: 1.1 }}
             >
               <button
-                onClick={() => document.getElementById('district-sim')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => document.getElementById('operator-review')?.scrollIntoView({ behavior: 'smooth' })}
                 className="btn-primary"
               >
                 EXPLORE TONIGHT <span>→</span>

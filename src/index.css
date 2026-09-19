@@ -36,19 +36,23 @@
   ::-webkit-scrollbar {
     width: 6px;
   }
+
   ::-webkit-scrollbar-track {
     background: #07090C;
   }
+
   ::-webkit-scrollbar-thumb {
     background: #242A31;
     border-radius: 3px;
   }
+
   ::-webkit-scrollbar-thumb:hover {
     background: #7E8792;
   }
 }
 
 @layer components {
+
   /* ── Typography ── */
   .text-label {
     @apply text-[11px] font-medium tracking-[0.15em] uppercase text-afterlight-text-muted;
@@ -88,19 +92,11 @@
 
   /* ── Button ── */
   .btn-primary {
-    @apply inline-flex items-center gap-3 px-8 py-4 bg-afterlight-amber text-afterlight-bg 
-           font-semibold text-sm tracking-wider uppercase transition-all duration-300
-           hover:bg-afterlight-amber-bright hover:gap-4 focus:outline-none 
-           focus-visible:ring-2 focus-visible:ring-afterlight-amber focus-visible:ring-offset-2 
-           focus-visible:ring-offset-afterlight-bg;
+    @apply inline-flex items-center gap-3 px-8 py-4 bg-afterlight-amber text-afterlight-bg font-semibold text-sm tracking-wider uppercase transition-all duration-300 hover:bg-afterlight-amber-bright hover:gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-afterlight-amber focus-visible:ring-offset-2 focus-visible:ring-offset-afterlight-bg;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center gap-3 px-8 py-4 border border-afterlight-line 
-           text-afterlight-text-secondary font-medium text-sm tracking-wider uppercase 
-           transition-all duration-300 hover:border-afterlight-amber hover:text-afterlight-amber
-           focus:outline-none focus-visible:ring-2 focus-visible:ring-afterlight-amber 
-           focus-visible:ring-offset-2 focus-visible:ring-offset-afterlight-bg;
+    @apply inline-flex items-center gap-3 px-8 py-4 border border-afterlight-line text-afterlight-text-secondary font-medium text-sm tracking-wider uppercase transition-all duration-300 hover:border-afterlight-amber hover:text-afterlight-amber focus:outline-none focus-visible:ring-2 focus-visible:ring-afterlight-amber focus-visible:ring-offset-2 focus-visible:ring-offset-afterlight-bg;
   }
 
   /* ── Glow effects ── */
@@ -145,15 +141,26 @@
   }
 
   @keyframes matchPulse {
-    0%, 100% { opacity: 0.4; }
-    50% { opacity: 1; }
+
+    0%,
+    100% {
+      opacity: 0.4;
+    }
+
+    50% {
+      opacity: 1;
+    }
   }
 }
 
 @layer utilities {
+
   /* Reduced motion */
   @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
+
+    *,
+    *::before,
+    *::after {
       animation-duration: 0.01ms !important;
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;

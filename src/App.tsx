@@ -1,13 +1,7 @@
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
-import InsightSection from './components/InsightSection';
 import ProblemSection from './components/ProblemSection';
-import HowItWorks from './components/HowItWorks';
-import DistrictSimulation from './components/DistrictSimulation';
-import ScenarioRoom from './components/ScenarioRoom';
-import ConstraintPanel from './components/ConstraintPanel';
 import OperatorReview from './components/OperatorReview';
-import SystemModel from './components/SystemModel';
 import PilotSection from './components/PilotSection';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
@@ -31,35 +25,11 @@ export default function App() {
 
         <div className="section-divider" />
 
-        <InsightSection />
-
-        <div className="section-divider" />
-
         <ProblemSection />
 
         <div className="section-divider" />
 
-        <HowItWorks />
-
-        <div className="section-divider" />
-
-        <DistrictSimulation />
-
-        <div className="section-divider" />
-
-        <ScenarioRoom />
-
-        <div className="section-divider" />
-
-        <ConstraintPanel />
-
-        <div className="section-divider" />
-
         <OperatorReview />
-
-        <div className="section-divider" />
-
-        <SystemModel />
 
         <div className="section-divider" />
 

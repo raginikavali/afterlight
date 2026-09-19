@@ -6,7 +6,7 @@ export default function ProblemSection() {
   const isInView = useInView(ref, { once: false, margin: '-20%' });
 
   return (
-    <section className="section-spacing" ref={ref}>
+    <section id="problem" className="section-spacing" ref={ref}>
       <div className="section-container max-w-4xl">
         {/* Headline */}
         <motion.h2
@@ -71,18 +71,33 @@ export default function ProblemSection() {
         </div>
 
         {/* Supporting line */}
-        <motion.p
-          className="mt-16 text-lg text-afterlight-text-secondary max-w-lg"
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.6, delay: 0.9 }}
-        >
-          We don't need to build another room.
-          <br />
-          <span className="text-afterlight-text-primary">
-            We need to use the rooms we already have.
-          </span>
-        </motion.p>
+        <div className="mt-16 space-y-6 max-w-lg">
+          <motion.p
+            className="text-lg text-afterlight-text-secondary leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.9 }}
+          >
+            We don't need to build another room.
+            <br />
+            <span className="text-afterlight-text-primary">
+              We need to use the rooms we already have.
+            </span>
+          </motion.p>
+
+          <motion.p
+            className="text-sm font-mono tracking-[0.1em] text-afterlight-text-muted leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 1.0 }}
+          >
+            THE INFRASTRUCTURE IS ALREADY HERE.
+            <br />
+            <span className="text-afterlight-amber">
+              THE NEXT OPPORTUNITY IS USING IT BETTER.
+            </span>
+          </motion.p>
+        </div>
       </div>
     </section>
   );
